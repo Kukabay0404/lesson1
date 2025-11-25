@@ -1,0 +1,62 @@
+<!-- FILE: index.html -->
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Мой блог — Главная</title>
+  <meta name="description" content="Главная страница блога — последние посты и новости">
+  <link rel="stylesheet" href="assets\styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo"><a href="/">Мой блог</a></h1>
+      <nav class="main-nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">Обо мне</a>
+        <a href="contact.html">Контакты</a>
+        <a href="partners.html">Партнёры</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Добро пожаловать в мой блог</h2>
+      <p>Здесь я делюсь мыслями, заметками и проектами.</p>
+    </section>
+
+    <section class="posts">
+      <article class="post-preview">
+        <h3><a href="post-01.html">Пост 1 — Название статьи</a></h3>
+        <p class="meta">Опубликовано: 25 ноября 2025</p>
+        <p>Короткое описание первой заметки — интригующий анонс, который мотивирует перейти по ссылке.</p>
+      </article>
+
+      <article class="post-preview">
+        <h3><a href="post-02.html">Пост 2 — Ещё одна заметка</a></h3>
+        <p class="meta">Опубликовано: 12 ноября 2025</p>
+        <p>Короткое описание второй заметки — идея, проект или обзор.</p>
+      </article>
+
+      <article class="post-preview">
+        <h3><a href="post-03.html">Пост 3 — История/Руководство</a></h3>
+        <p class="meta">Опубликовано: 1 ноября 2025</p>
+        <p>Короткое описание третьей заметки — руководство или рассказ.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Мой блог. Все права защищены.</p>
+      <p><a href="contact.html">Связаться</a> · <a href="partners.html">Партнёры</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
